@@ -10,14 +10,17 @@ def array_game():
   print("\n")
   
   
-  acronyms = [["RAM","Random Access Memory"], ["ROM", "Read Only Memory"], ["PC","Personal Computer"], ["GUI","Graphical User Interface"], ["ISP","Internet Service Provider"], ["TB","Terabyte"], ["URL","Uniform Resource Locator"], ["LAN","Local Area Network"], ["WAN","Wide Area Nerwork"], ["WWW","World Wide Web"]]
+  ACRONYMS = open("acronyms.txt",'r')
   score = 0
 
-  for item in acronyms:
-    print(item[0])
+  for record in ACRONYMS:
+    item = record.split(',')
+    acronym, definition = item[0], item[1]
+    print(acronym)
     answer = input("What\'s your answer?\n--> ").lower()
+    #print(item)
     
-    if answer == item[1].lower():
+    if answer == definition.lower():
       print("Correct")
       score += 1
     else:

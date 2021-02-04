@@ -1,0 +1,10 @@
+RAM,Random Access Memory,
+ROM,Read Only Memory,
+PC,Personal Computer,
+GUI,Graphical User Interface,
+ISP,Internet Service Provider,
+TB,Terabyte,
+URL,Uniform Resource Locator,
+LAN,Local Area Network,
+WAN,Wide Area Nerwork,
+WWW,World Wide Web
